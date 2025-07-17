@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/venom-button@latest/dist/venom-button.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippine Coding Camp</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107877318273128");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo-container" id="logo-container">
+      <img src="src/logo.png" alt="Philippine Coding Camp Logo" class="logo" id="logo-img">
+      <div class="logo" id="logo">Philippine Coding Camp</div>
+    </div>
+
+    <nav id="navbar">
+      <ul id="nav-links">
+        <li><a href="#" id="nav-about">About</a></li>
+        <li><a href="#" id="nav-courses">Courses</a></li>
+        <li><a href="#" id="nav-workforce">Workforce Solutions</a></li>
+        <li><a href="#" id="nav-editor">The Academic Editor</a></li>
+        <li><a href="#" id="nav-events">Events</a></li>
+        <li><a href="#" id="nav-faqs">FAQs</a></li>
+      </ul>
+    </nav>
+
+    <button class="cta header-btn" id="header-cta">Get in touch</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="text" id="hero-text">
+      <h1>
+        Invest in you. <br> 
+        Invest in <br>
+        <span>your future.</span>
+      </h1>
+      <p>Our programs are industry-vetted and globally recognized, perfect for all ages.</p>
+      <button class="cta hero-btn" id="hero-cta">BOOK A FREE CONSULTATION<span class="cta-icon">&rsaquo;</span></button>
+    </div>
+    <div class="hero-image" id="hero-image"><img src="src/placeholder-hero.png" alt="Hero" /></div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <h2>Browse Top Essential Courses</h2>
+    <div class="course-list">
+      <div class="course-card web-dev">
+        <img src="src/icons/web.png" alt="Web Icon" class="course-icon">
+        <p><strong>Web<br>Development</strong></p>
+      </div>
+
+      <div class="course-card game-dev">
+        <img src="src/icons/game.png" alt="Game Icon" class="course-icon">
+        <p><strong>Game<br>Development</strong></p>
+      </div>
+
+      <div class="course-card software-eng">
+        <img src="src/icons/software.png" alt="Software Icon" class="course-icon">
+        <p><strong>Software<br>Engineering</strong></p>
+      </div>
+
+      <div class="course-card design">
+        <img src="src/icons/design.png" alt="Design Icon" class="course-icon">
+        <p><strong>Design and<br>Creatives</strong></p>
+      </div>
+
+      <div class="browse-all">
+        <div class="arrow-circle">
+          <span class="arrow">&rsaquo;</span>
+        </div>
+        <p>Browse All</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- What We Do Section -->
+  <section class="what-we-do grid-background-section" id="what-we-do">
+    <h2 class="section-title">What We Do</h2>
+    <div class="what-we-do-grid">
+
+      <div class="card wide sky">
+        <div class="card image-card">
+          <img src="src/4-children.png" alt="Trainer Image" class="test">
+        </div>
+        <div class="card-wide-sky-text">
+          <h3>Academe</h3>
+          <p>Fun, engaging, and personalized courses for young learners</p>
+        </div>
+      </div>
+
+      <div class="section1">
+        <div class="card small gold">
+          <img src="src/workforce.png" class="card-img">
+          <h3>Workforce and Tech Solutions</h3>
+          <p>Staffing solutions, employee upskilling, and IT support</p>
+        </div>
+
+        <div class="card small darkblue">
+          <img src="src/language-editing.png" alt="Workforce Image" class="card-img">
+          <h3>Language Editing Services</h3>
+          <p>Proofreading and editorial support</p>
+        </div>
+      </div>
+    
+      <div class="card tall blue">
+        <div class="card image-card">
+          <img src="src/woman-laptop.png" alt="Trainer Image" class="woman-laptop">
+        </div>
+        <div class="card-tall-blue-text">
+          <h3>Academe+</h3>
+          <p>Professional training and lifelong learning</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Accomplishments Section -->
+  <section class="what-we-do grid-background-section" id="accomplishments">
+    <h2 class="section-title">What We’ve Accomplished</h2>
+    <div class="accomplishments-list">
+      <div class="accomplishment">
+        <img src="src/placeholder-graduates.png" alt="Graduates Icon" class="accomplishment-icon">
+        <div class="accomplishment-text">
+          <strong>10,000+ Graduates<br>of all ages</strong>
+        </div>
+      </div>
+      <div class="accomplishment">
+        <img src="src/placeholder-institutions.png" alt="Institutions Icon" class="accomplishment-icon">
+        <div class="accomplishment-text">
+          <strong>10,000+ Institutions<br>Helped</strong>
+        </div>
+      </div>
+      <div class="accomplishment">
+        <img src="src/placeholder-classes.png" alt="Classes Icon" class="accomplishment-icon">
+        <div class="accomplishment-text">
+          <strong>10,000+ Classes<br>Completed</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="clients" id="clients">
+    <h2 class="section-title">Who We’ve Worked With</h2>
+    <div class="client-logos" id="client-logos">
+      <img src="src/placeholder-all-logos.png" alt="All Client Logos" class="client-logos-img" />
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="what-we-do grid-background-section" id="testimonials">
+    <h2 class="section-title">Why Choose PCC</h2>
+    <div class="testimonials-cards">
+      <div class="testimonial-card gold">
+        <p class="testimonial-quote">“I enjoyed the classes!<br>They’re so much fun.<br>Would recommend.”</p>
+        <div class="testimonial-person">
+          <strong>Ethan, 10</strong><br>
+          <span>Future Game Designer</span>
+        </div>
+      </div>
+      <div class="testimonial-card blue">
+        <p class="testimonial-quote">“I enjoyed the classes!<br>They’re so much fun.<br>Would recommend.”</p>
+        <div class="testimonial-person">
+          <strong>Nina, 24</strong><br>
+          <span>Data Science Specialist</span>
+        </div>
+      </div>
+      <div class="testimonial-card red">
+        <p class="testimonial-quote">“I enjoyed the classes!<br>They’re so much fun.<br>Would recommend.”</p>
+        <div class="testimonial-person">
+          <strong>Rod, 40</strong><br>
+          <span>Proud Parent</span>
+        </div>
+      </div>
+    </div>
+    <div class="robot-chat">
+      <div class="robot-chat">
+      <div class="robot-popup-bubble" id="robotPopup">
+        👋 Hi! How can I help you today?
+      </div>
+      <img src="src/placeholder-robot.png" alt="Robot Logo" class="robot-logo" id="robotLogo" onclick="toggleRobotPopup()" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="final-cta">
+    <div class="final-cta-flex">
+      <div class="final-cta-visuals">
+        <img src="src/placeholder-final-cta-all.png" alt="Final CTA Visual" class="final-cta-all-img">
+      </div>
+      <div class="final-text" id="final-text">
+        <h2>Program your</h2>
+        <h2>future today!</h2>
+        <p>This is your sign to invest in yourself.</p>
+        <button class="cta" id="final-cta-btn" onclick="openConsultationModal()">BOOK A FREE CONSULTATION<span class="cta-icon">&rsaquo;</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-col contact">
+        <h3>Contact Us</h3>
+        <div class="footer-contact-item">
+          <img src="src/icon-phone.png" alt="Phone" class="footer-icon" />
+          <span>+63 947 476 0321</span>
+        </div>
+        <div class="footer-contact-item">
+          <img src="src/icon-mail.png" alt="Mail" class="footer-icon" />
+          <span>hello@philippinecoding.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <img src="src/icon-location.png" alt="Location" class="footer-icon" />
+          <span>Bro. Andrew Gonzalez Hall,<br>De La Salle University, Malate, Manila</span>
+        </div>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <div class="footer-links-list">
+          <div>
+            <a href="#">About</a><br>
+            <a href="#">Academe Courses</a><br>
+            <a href="#">Academe+ Courses</a><br>
+            <a href="#">Workforce Solutions</a><br>
+            <a href="#">The Academic Editor</a>
+          </div>
+          <div>
+            <a href="#">Events</a><br>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col socials">
+        <h3>Follow Us</h3>
+        <div class="footer-social-icons">
+          <a href="#"><img src="src/icon-fb.png" alt="Facebook" class="footer-social-icon" /></a>
+          <a href="#"><img src="src/icon-ig.png" alt="Instagram" class="footer-social-icon" /></a>
+          <a href="#"><img src="src/icon-li.png" alt="LinkedIn" class="footer-social-icon" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <hr class="footer-divider" />
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <img src="src/logo.png" alt="Philippine Coding Camp Logo" class="footer-logo-img" />
+      <span>Philippine Coding Camp</span>
+    </div>
+    <div class="footer-copyright">
+        © 2025 Philippine Coding Camp. All rights reserved.
+    </div>
+  </div>
+
+  <!-- Venom WhatsApp Widget JS -->
+  <script src="https://cdn.jsdelivr.net/npm/venom-button@latest/dist/venom-button.min.js"></script>
+
+  <script>
+    window.venomButton = new VenomButton({
+      phone: '639762669439', // Replace with your actual WhatsApp number
+      popupMessage: 'Hi there! How can we help you?',
+      message: "Hello! I'm interested in your services.",
+      showPopup: true,
+      headerTitle: 'Chat with us',
+      headerColor: '#25D366',
+      backgroundColor: '#25D366',
+      position: "right", // Or "left"
+    });
+  </script>
+</body>
+</html>
