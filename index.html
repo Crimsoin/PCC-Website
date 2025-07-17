@@ -69,31 +69,34 @@
     <div class="hero-image" id="hero-image"><img src="src/placeholder-hero.png" alt="Hero" /></div>
   </section>
 
-  <!-- Courses Section -->
   <section class="courses" id="courses">
     <h2>Browse Top Essential Courses</h2>
-    <div class="course-list">
-      <div class="course-card web-dev">
-        <img src="src/icons/web.png" alt="Web Icon" class="course-icon">
-        <p><strong>Web<br>Development</strong></p>
+    <div class="course-list-wrapper">
+      <div class="course-list" id="carousel">
+        
+        <div class="course-card web-dev">
+          <img src="src/icons/web.png" alt="Web Icon" class="course-icon">
+          <p><strong>Web<br>Development</strong></p>
+        </div>
+
+        <div class="course-card game-dev">
+          <img src="src/icons/game.png" alt="Game Icon" class="course-icon">
+          <p><strong>Game<br>Development</strong></p>
+        </div>
+
+        <div class="course-card software-eng">
+          <img src="src/icons/software.png" alt="Software Icon" class="course-icon">
+          <p><strong>Software<br>Engineering</strong></p>
+        </div>
+
+        <div class="course-card design">
+          <img src="src/icons/design.png" alt="Design Icon" class="course-icon">
+          <p><strong>Design and<br>Creatives</strong></p>
+        </div>
       </div>
 
-      <div class="course-card game-dev">
-        <img src="src/icons/game.png" alt="Game Icon" class="course-icon">
-        <p><strong>Game<br>Development</strong></p>
-      </div>
-
-      <div class="course-card software-eng">
-        <img src="src/icons/software.png" alt="Software Icon" class="course-icon">
-        <p><strong>Software<br>Engineering</strong></p>
-      </div>
-
-      <div class="course-card design">
-        <img src="src/icons/design.png" alt="Design Icon" class="course-icon">
-        <p><strong>Design and<br>Creatives</strong></p>
-      </div>
-
-      <div class="browse-all">
+      <!-- Arrow stays on right -->
+      <div class="browse-all" id="nextBtn">
         <div class="arrow-circle">
           <span class="arrow">&rsaquo;</span>
         </div>
@@ -101,6 +104,8 @@
       </div>
     </div>
   </section>
+
+
 
 
   <!-- What We Do Section -->
@@ -206,8 +211,15 @@
     </div>
     <div class="robot-chat">
       <div class="robot-chat">
-      <div class="robot-popup-bubble" id="robotPopup">
-        👋 Hi! How can I help you today?
+      <div class="robot-popup-bubble" id="robotPopup" style="display: none;">
+        <div class="chat-header">ChatBot<span class="chat-close" onclick="toggleRobotPopup()" style="float: right; cursor: pointer;">✖</span></div>
+        <div class="chat-body" id="chatBody">
+          <div class="bot-message">Hi! How can I help you today?</div>
+        </div>
+        <div class="chat-input">
+          <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter'){sendMessage()}">
+          <button onclick="sendMessage()">Send</button>
+        </div>
       </div>
       <img src="src/placeholder-robot.png" alt="Robot Logo" class="robot-logo" id="robotLogo" onclick="toggleRobotPopup()" />
       </div>
